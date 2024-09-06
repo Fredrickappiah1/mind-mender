@@ -6,11 +6,11 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // Initialize the Google Generative AI with your API key
 const apiKey = process.env.GEMINI_API_KEY;
-const genAI = new GoogleGenerativeAI(apiKey);CH
+const genAI = new GoogleGenerativeAI(apiKey);
 
 // Set up Express
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
